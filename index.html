@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои книги</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Библиотека книг</h1>
+        <div class="form">
+            <div class="form_item">
+                <label>Название</label>
+                <input id="name" type="text">
+            </div>
+            <div class="form_item">
+                <label>Автор</label>
+                <input id="author" type="text">
+            </div>
+            <div class="form_item">
+                <label>Год издания</label>
+                <input id="year" type="text">
+            </div>
+            <div class="form_item">
+                <label>Жанр</label>
+                <input id="genre" type="text">
+            </div>
+            <div class="form_item">
+                <label>Статус</label>
+                <select id="status">
+                    <option value="Прочитано">Прочитано</option>
+                    <option value="Не прочитано">Не прочитано</option>
+                </select>
+            </div>
+            <button id="add-task">Добавить</button>
+        </div>
+    </div>
+    <h2>Список книг</h2>
+    <button id="filter-all">Все</button>
+    <button id="filter-read">Прочитанные</button>
+    <button id="filter-unread">Непрочитанные</button>
+    <div class="tasks" id="tasks-list">
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
